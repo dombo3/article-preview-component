@@ -26,11 +26,15 @@ main {
 
 .bottom {
   display: flex;
-  margin: 10px 30px;
+  padding: 10px 30px;
   height: 60px;
 }
 
-.avatar {
+#contact {
+  align-items: center;
+}
+
+#contact > .avatar {
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -55,11 +59,13 @@ main {
   border-radius: 35px;
 }
 
+#unshare-button {
+  background: hsl(214, 17%, 51%);
+}
+
 #share-container {
   align-items: center;
   background-color: hsl(217, 19%, 35%);
-  margin: 0px;
-  padding: 10px 30px;
 }
 
 #share-container > p {
@@ -96,3 +102,15 @@ main {
 .hidden {
   display: none;
 }
+
+/* button:hover,
+button:focus {
+    background: hsl(217, 19%, 35%);
+} */
+
+button:focus {
+    outline: none;
+}
+
+/* button:active {
+} */
