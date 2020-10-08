@@ -25,7 +25,7 @@ main {
   margin: 40px 30px;
 }
 
-.bottom {
+.footnote {
   display: flex;
   padding: 10px 30px;
   height: 60px;
@@ -113,7 +113,7 @@ button:focus {
   outline: none;
 }
 
-@media screen and (min-width: 1439px) {
+@media screen and (min-width: 375px) {
   body {
     font-size: 13px;
     background-color: hsl(210, 46%, 95%);
@@ -122,7 +122,10 @@ button:focus {
   main {
     flex-direction: row;
     width: max-content;
-    margin: 300px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .image-container {
@@ -165,7 +168,7 @@ button:focus {
     margin: 0px;
   }
 
-  .bottom {
+  .footnote {
     padding: 10px 30px;
   }
 
@@ -215,7 +218,7 @@ button:focus {
     border-top: 13px solid hsl(217, 19%, 35%);
     border-right: 12px solid transparent;
     position: absolute;
-    margin-top: -1px;
+    margin-top: -2px;
     left: 100px;
     top: 49px;
   }
